@@ -1,6 +1,6 @@
 {
-  "name": "Team Password Manager for Heroku",
-  "description": "Password management software for groups.",
+  "name": "Team Password Manager",
+  "description": "Password management software for groups on Heroku",
   "website": "http://teampasswordmanager.com/",
   "success_url": "/index.php/install",
   "addons": ["cleardb:ignite"]
