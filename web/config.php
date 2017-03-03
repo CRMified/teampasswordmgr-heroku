@@ -4,7 +4,7 @@
 
 
 if (getenv("ENCRYPT_DB_CONFIG") == "1") {
-    echo "ENCRYPT_DB_CONFIG is ON";
+    //echo "ENCRYPT_DB_CONFIG is ON";
     define('ENCRYPT_DB_CONFIG', 1);
     $server = getenv("CONFIG_HOSTNAME");
     $username = getenv("CONFIG_USERNAME");
@@ -12,7 +12,7 @@ if (getenv("ENCRYPT_DB_CONFIG") == "1") {
     $db = getenv("CONFIG_DATABASE");    
 
 } else {
-    echo "ENCRYPT_DB_CONFIG is OFF";
+    //echo "ENCRYPT_DB_CONFIG is OFF";
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
     $server = $url["host"];
     $username = $url["user"];
