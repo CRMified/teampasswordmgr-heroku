@@ -3,5 +3,10 @@
   "description": "Password management software for groups on Heroku",
   "website": "http://teampasswordmanager.com/",
   "success_url": "/index.php/install",
-  "addons": ["cleardb:ignite"]
+  "addons": ["cleardb:ignite"],
+  "buildpacks": [
+    {
+      "url": "https://github.com/CRMified/heroku-001"
+    }
+  ],  
 }
