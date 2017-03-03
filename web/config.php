@@ -2,12 +2,23 @@
 
 // Set these database parameters before installing Team Password Manager on heroku
 
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-$server = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$db = substr($url["path"], 1);
+if (getenv("ENCRYPT_DB_CONFIG") == "1") {
+    //echo "ENCRYPT_DB_CONFIG is ON";
+    define('ENCRYPT_DB_CONFIG', 1);
+    $server = getenv("CONFIG_HOSTNAME");
+    $username = getenv("CONFIG_USERNAME");
+    $password = getenv("CONFIG_PASSWORD");
+    $db = getenv("CONFIG_DATABASE");    
+
+} else {
+    //echo "ENCRYPT_DB_CONFIG is OFF";
+    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    $server = $url["host"];
+    $username = $url["user"];
+    $password = $url["pass"];
+    $db = substr($url["path"], 1);
+}
 
 // MySQL Database server
 define('CONFIG_HOSTNAME', $server);	
