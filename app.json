@@ -9,4 +9,11 @@
       "url": "https://github.com/CRMified/heroku-001"
     }
   ],  
+  "env": {
+    "ENCRYPT_DB_CONFIG": "0",
+    "CONFIG_HOSTNAME": "",
+    "CONFIG_USERNAME": "",
+    "CONFIG_PASSWORD": "",
+    "CONFIG_DATABASE": ""
+  }
 }
