@@ -1,0 +1,43 @@
+Upgrade instructions for Team Password Manager v. 7.x and up
+
+IMPORTANT: v. 7.x+ of Team Password Manager requires at least PHP 5.6.
+Make sure you have the appropriate version of PHP in your system. In addition, if you need to use
+two-factor authentication, you'll need the GD2 library to be able to generate QR codes (you'll
+still be able to configure two-factor authentication without QR codes, but it's much easier with them.)
+
+To upgrade your installation of Team Password Manager to the latest version
+follow the next steps.
+
+As a safety measure, make a complete backup of your current installation of 
+Team Password Manager before executing these steps. Be sure to backup the files and
+also the database tables.
+
+1. Download the latest version of Team Password Manager 
+from http://teampasswordmanager.com/download/
+
+2. Decompress the downloaded file on your computer. You'll get a bunch of files and folders. 
+The important ones are the 'css', 'import', 'system', 'uploads' and 'wmm' folders, and the 'index.php' file.
+
+3. Replace the 'css', 'import', 'system' and 'wmm' folders and the 'index.php' file from your 
+installation of Team Password Manager with the new ones. Note: be careful not to overwrite config.php and folder.php.
+
+Note: Team Password Manager comes by default with the English language files (in the 'wmm/language/en' folder). If you have additional language files you'll need to reinstall them afterwards, so be sure to copy them before replacing the 'wmm' folder. For more information see http://teampasswordmanager.com/docs/languages/.
+
+4. If you don't have a folder called 'import', copy it from the decompressed files and make 
+it writable by the web server (give it 666 or 777 permissions). If this folder already exists, make sure it is writable.
+
+5. If you don't have a folder called 'uploads', copy it from the decompressed files and make 
+it writable by the web server (give it 666 or 777 permissions). If this folder already exists, make sure it is writable. 
+
+6. Execute the upgrade procedure by pointing your browser to 
+web_location_of_teampasswordmanager_files/index.php/upgrade (Example:
+http://teampasswordmanager.mydomain.com/index.php/upgrade) and follow the 
+instructions. If you get a blank screen instead, it's possible that you need to update the Ioncube loader. Please check the
+logs in this case.
+
+7. We advise you to delete the following files from your Team Password Manager folder: install.txt, eula.txt and upgrade.txt.
+
+
+*** END OF THE UPGRADE DOCUMENT ***
+
+You can also find this document online: http://teampasswordmanager.com/docs/upgrade/

@@ -1,0 +1,9 @@
+# Enforces Apache to serve all files with an attachment header to force a download dialog,
+# preventing Apache to run any of the uploaded files through an interpreter like PHP,
+# even if the file extension is ".php".
+ForceType application/octet-stream
+Header set Content-Disposition attachment
+Header set X-Content-Type-Options nosniff
+
+# Prevents directory listing
+Options -Indexes

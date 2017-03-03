@@ -1,0 +1,184 @@
+Installation instructions for Team Password Manager v. 7.x and up
+
+Download Team Password Manager from http://teampasswordmanager.com/download/
+and follow these instructions to install it. 
+
+You can also read this document online: http://teampasswordmanager.com/docs/install/
+
+SHORT VERSION
+
+- Requirements: On the server: Apache 2 with mod_php, PHP 5.6+, MySQL 5 with Mcrypt and GD2,  
+ionCube Loader, use a VPS (Virtual Private Server) or dedicated server for security, never a shared 
+server. On the client: a recent version of Mozilla Firefox, Internet Explorer, Google Chrome, Apple Safari.
+
+- Steps:
+
+	1. Install the ionCube Loader (http://www.ioncube.com/loaders.php).
+	2. Create the database in MySQL.
+	3. Upload the file to the server, decompress and place on web root.
+	4. Fill in the database parameters in config.php.
+	5. Execute the installer.
+	6. Register licenses (optional): click on the "Settings" option and the "Add a license".
+	7. Place files outside of webroot (optional). See folder.php.
+	8. Make the 'import' folder writable by the web server.
+	9. Make the 'uploads' folder writable by the web server.
+	10. Copy additional language files to wmm/language.
+	
+
+LONG VERSION
+
+Requirements
+
+Also online: http://teampasswordmanager.com/docs/requirements/
+
+Team Password Manager is a web application that is installed on a web/application server
+and is viewed from a browser. These are the exact requirements:
+
+Server:
+	
+	- Environment: for security reasons we advise the execution of Team Password Manager on at least 
+	a VPS (Virtual Private Server) or a dedicated server. Do not use a shared server. Also, use https 
+	(encrypted connection from the browser to the server).
+	- Operating system: any operating system that can execute the next components. We have tested 
+	Team Password Manager on a number of Linux distributions, FreeBSD, Windows systems and OSX (x86). We've 
+	seen problems installing Team Password Manager on PHP x64 for Windows. From http://windows.php.net: "The 
+	x64 builds of PHP for Windows should be considered experimental, and do not yet provide 64-bit integer 
+	or large file support".	So if using Windows please use PHP / Apache 32 bit.
+	- Web server: Apache 2 with mod_php.
+	- Database: MySQL 5.x. Better MySQL 5.6+ for maximum performance. Note: if using MySQL 5.7, ONLY_FULL_GROUP_BY mode cannot be used.
+	- PHP 5.6.0 or newer (PHP 7 supported) with the following PHP extensions or modules:
+		- Mcrypt library. See http://php.net/manual/en/book.mcrypt.php.
+		- GD2 Extension. See http://www.php.net/manual/en/book.image.php. GD2 is only required for 
+		generating the QR codes needed to configure two-factor authentication. It's not required to execute 
+		Team Password Manager and the installer doesn't check if it's installed. You'll still be able to 
+		configure two-factor authentication without QR codes, but it's much easier with them.
+		- MySQLi extension. See http://php.net/manual/en/book.mysqli.php.
+		- Multibyte string (mbstring) extension. See http://www.php.net/mbstring.
+		- LDAP support. See http://www.php.net/manual/en/book.ldap.php. This is only required if you want 
+		to use LDAP authentication.
+		- The Hash extension (http://php.net/manual/en/book.hash.php)
+		must be installed and the "sha256" algorithm present.
+	- A note on PHP 5.6+ (but not PHP 7): if you're using PHP 5.6+ make sure the following is set in php.ini: always_populate_raw_post_data = -1
+	- The ionCube PHP Loader extension. We provide instructions to install this extension if it’s not already installed.
+	- A note for FreeBSD: the installation of PHP for FreeBSD considers the following PHP extensions as optional and doesn't install them by default. You should: session, hash and json.
+	
+Client (browser): use recent versions of the following browsers:
+
+	- Mozilla Firefox
+	- Internet Explorer.
+	- Google Chrome.
+	- Apple Safari.
+	- Opera.
+	
+	Cookies must be activated.
+	Javascript needs to be enabled. 
+	Flash must be installed in the browser if you want to use the Flash "Copy to clipboard" button (COPY_TO_CLIPBOARD=zeroclipboard or flash).
+	
+	
+Install
+
+Also online: http://teampasswordmanager.com/docs/install/
+
+We assume you already have a working installation of Apache, PHP and MySQL. Follow these
+steps to install Team Password Manager:
+
+1. Install the ionCube Loader:
+
+	- Check to see if it's already installed: create a php file on your server (ex: phpinfo.php) 
+	with the following command: 
+	
+	<?php phpinfo(); ?> 
+	
+	and open it with your browser. If the ionCube Loader is installed you should see the 
+	following line (usually in the third box before PHP credits): 
+	
+	"...with the ionCube PHP Loader vx.x.x ..."
+
+	If the ionCube Loader is not installed, install it:
+	
+	- Download the ionCube Loader Wizard (http://www.ioncube.com/loader-wizard/loader-wizard.zip 
+	or http://www.ioncube.com/loader-wizard/loader-wizard.tgz).
+	- Decompress and copy the wizard script (loader-wizard.php) into your web server.
+	- Open the script on your browser and follow instructions.
+	
+	- Important: at the end of this step (or at the end of the install process), make sure you delete
+	  the phpinfo file. It is not needed for Team Password Manager to run and it's giving away
+	  information about your server.
+
+2. Create the database in MySQL
+
+You have to create the database that will store Team Password Manager data. Make sure the database
+user has enough privileges to create tables and insert/delete data.
+
+You can use the following commands in the MySQL prompt or in phpMyAdmin:
+
+CREATE DATABASE `tpm_database` CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+GRANT ALL PRIVILEGES ON `tpm_database`.* TO `tpm_user`@'localhost' IDENTIFIED BY 'tpm_password';
+FLUSH PRIVILEGES;
+
+These commands create a database called tpm_database and a user called tpm_user with password tpm_password 
+with all privileges on tpm_database.
+
+3. Upload the files to the server
+
+Decompress the Team Password Manager file (teampasswordmanager_x.x.x.zip) and upload the resulting
+files and folders to the server web root.
+
+4. Fill in the configuration file
+
+The configuration file config.php contains the database parameters that Team Password Manager uses:
+
+- CONFIG_HOSTNAME: hostname of the machine where the database executes. Usually localhost.
+- CONFIG_USERNAME: username to access the database server and the database created in step 2.
+- CONFIG_PASSWORD: the password for the username. There needs to be a password, a blank one is not valid.
+- CONFIG_DATABASE: the name of the database created in step 2.
+
+5. Execute the installer
+
+Point your browser to web_location_of_Team Password Manager_files/index.php/install (Example:
+http://teampasswordmanager.mydomain.com/index.php/install) and follow the instructions.
+
+If everything is correct you have now a working Team Password Manager system. This is the Free Version, so
+you only have two users and a maximum of five projects. If you need more users and projects you 
+should purchase one or more licenses (http://teampasswordmanager.com/buy/) and register them.
+
+If you get the Internal Server Error 500 when executing the installer, see the document called 
+Troubleshooting Internal Server Error 500, located at: http://teampasswordmanager.com/docs/error_500/.
+
+6. Register licences (optional)
+
+Log into Team Password Manager with the user created on step 5 by the installer and click on "Settings"
+on the top menu. Go to the "Licenses" tab, click "Add a license" and fill in the license data sent to you by e-mail.
+
+7. Move the program files outside of webroot (optional)
+
+For increased security you can place most of the files of Team Password Manager outside webroot, thus 
+protecting them from direct Internet access.
+
+The files that need to be "visible" are: index.php, folder.php, the css folder and the import folder. 
+All the other files and folders can be located anywhere else on your system. This location is then 
+entered in the APP_FOLDER parameter on the folder.php file. See folder.php for more instructions.
+
+8. Make the 'import' folder writable by the web server
+
+This folder is used by the import process. Give it 666 or 777 permissions so that Team Password Manager 
+can write in it.
+
+9. Make the 'uploads' folder writable by the web server
+
+This folder is used to store files uploaded in passwords and projects. Give it 666 or 777 permissions so that Team Password Manager 
+can write in it. You can also change its default location. Check config.php.
+
+10. Copy additional language files to 'wmm/language'
+
+Team Password Manager comes by default with the English language files (in the 'wmm/language/en' folder). If you want your installation
+to have more languages available you can downlowad them from http://teampasswordmanager.com/docs/language-files/ and copy them to the 'wmm/language' folder.
+
+For more information see http://teampasswordmanager.com/docs/languages/.
+
+11. We advise you to delete the following files from your Team Password Manager folder: install.txt, eula.txt and upgrade.txt.
+
+
+*** END OF THE INSTALL DOCUMENT ***
+
+You can also find this document online: http://teampasswordmanager.com/docs/install/

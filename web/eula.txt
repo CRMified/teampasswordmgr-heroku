@@ -1,0 +1,173 @@
+End-User License Agreement for Team Password Manager
+
+IMPORTANT PLEASE READ THE TERMS AND CONDITIONS OF THIS LICENSE AGREEMENT 
+CAREFULLY BEFORE USING THIS SOFTWARE.
+
+This End-User License Agreement ("EULA") is a legal agreement 
+between you (either an individual or a single entity) and THE LICENSER ("THE LICENSER")
+for Team Password Manager which may include associated software components, media, 
+printed materials, and "online" or electronic documentation ("SOFTWARE PRODUCT"). 
+By installing, copying, or otherwise using the SOFTWARE PRODUCT, you agree 
+to be bound by the terms of this EULA. This license agreement represents 
+the entire agreement concerning the program between you and THE LICENSER, 
+and it supersedes any prior proposal, representation, or understanding 
+between the parties. If you do not agree to the terms of this EULA, 
+do not install or use the SOFTWARE PRODUCT.
+
+The SOFTWARE PRODUCT is protected by copyright laws and international copyright 
+treaties, as well as other intellectual property laws and treaties. 
+The SOFTWARE PRODUCT is licensed, not sold.
+
+1. GRANT OF LICENSE
+
+The SOFTWARE PRODUCT is licensed as follows:
+
+(a) Authorised Users.
+Access to and use of the SOFTWARE PRODUCT is limited to individuals, firms, 
+organizations or entities that purchase one or more licenses ("LICENSEES"). 
+Each license authorizes a specific number of named users ("AUTHORIZED USERS") 
+to access and use the SOFTWARE PRODUCT.
+
+The SOFTWARE PRODUCT permits LICENSEES to assign a user name to each 
+AUTHORIZED USER, to delete user names and create new user names, and 
+to host the SOFTWARE PRODUCT on only one server at one location for
+production/normal use, on another server for testing or development and 
+on another server as a live backup. The total number of AUTORIZED USERS cannot 
+exceed the number licensed under the terms of your online order or 
+registration form, purchase order, written agreement or other evidence 
+of purchase.
+
+By accessing or using the SOFTWARE PRODUCT, you represent and warrant 
+that you are a LICENSEE or an AUTHORIZED USER and that you agree to 
+these terms and conditions.
+
+THE LICENSER grants to you, on these terms and conditions, the non-exclusive 
+right and license to use the SOFTWARE PRODUCT. In the event of a conflict 
+between these terms and conditions and the terms of your online order
+or registration form, purchase order, written agreement or other evidence of 
+purchase, the purchase order, written agreement or other evidence of purchase 
+will control.
+
+(b) Free Version.
+Access to and use of the SOFTWARE PRODUCT is granted to individuals, firms, 
+organizations or entities without the need to purchase any licenses in the 
+case that only two users are allowed to access and use the SOFTWARE PRODUCT 
+and a maximum of five projects can be created in the SOFTWARE PRODUCT 
+("FREE VERSION").
+
+By accessing or using the FREE VERSION, you represent and warrant 
+that you agree to these terms and conditions.
+
+THE LICENSER grants to you, on these terms and conditions, the non-exclusive 
+right and license to use the FREE VERSION.
+
+(c) Demo Version.
+Access to and use of the SOFTWARE PRODUCT is granted to individuals, firms, 
+organizations or entities without the need to purchase any licenses in the 
+case that only serves for demonstration uses of the SOFTWARE PRODUCT ("DEMO VERSION").
+
+By accessing or using the DEMO VERSION, you represent and warrant 
+that you agree to these terms and conditions.
+
+THE LICENSER grants to you, on these terms and conditions, the non-exclusive 
+right and license to use the DEMO VERSION.
+
+(d) Backup Copies.
+You may also make copies of the SOFTWARE PRODUCT as may be necessary for backup 
+and archival purposes.
+
+2. DESCRIPTION OF OTHER RIGHTS AND LIMITATIONS
+
+(a) Maintenance of Copyright Notices.
+You must not remove or alter any copyright notices on any and all copies of 
+the SOFTWARE PRODUCT.
+
+(b) Distribution.
+You may not distribute registered copies of the SOFTWARE PRODUCT to third parties.
+
+(c) Prohibition on Reverse Engineering, Decompilation, and Disassembly.
+You may not reverse engineer, decompile, or disassemble the SOFTWARE PRODUCT, except 
+and only to the extent that such activity is expressly permitted by applicable law 
+notwithstanding this limitation.
+
+(d) Rental.
+You may not rent, lease, or lend the SOFTWARE PRODUCT.
+
+(e) Support Services.
+THE LICENSER may provide you with support services related to the SOFTWARE PRODUCT 
+("SUPPORT SERVICES"). Any supplemental software code provided to you as part of the 
+SUPPORT SERVICES shall be considered part of the SOFTWARE PRODUCT and subject to the 
+terms and conditions of this EULA.
+
+(f) Compliance with Applicable Laws.
+You must comply with all applicable laws regarding use of the SOFTWARE PRODUCT.
+
+3. TERMINATION
+
+Without prejudice to any other rights, THE LICENSER may terminate this EULA if you 
+fail to comply with the terms and conditions of this EULA. In such event, you must 
+destroy all copies of the SOFTWARE PRODUCT in your possession.
+
+4. COPYRIGHT
+
+All title, including but not limited to copyrights, in and to the SOFTWARE PRODUCT 
+and any copies thereof are owned by THE LICENSER. All title and intellectual property 
+rights in and to the content which may be accessed through use of the SOFTWARE PRODUCT 
+is the property of the respective content owner and may be protected by applicable 
+copyright or other intellectual property laws and treaties. This EULA grants you no 
+rights to use such content. All rights not expressly granted are reserved by THE LICENSER.
+
+The SOFTWARE PRODUCT uses other products that have their own licenses and copyrights:
+
+- Jquery (http://jquery.com). See the license on http://jquery.org/license or ./css/js/jquery_mit_license.txt.
+- Codeigniter 2 (http://www.codeigniter.com). See the license on ./system/codeigniter_license.txt.
+- Twitter Bootstrap (http://twitter.github.io/bootstrap/). Apache License V2 (http://www.apache.org/licenses/LICENSE-2.0).
+- bootstrap-tagmanager.js (http://welldonethings.com/tags/manager). Mozilla Public License v. 2.0 (http://www.mozilla.org/MPL/2.0/).
+- FatCow free icons (http://www.fatcow.com/free-icons).
+- CodeIgniter-PHP-QR-Code (https://github.com/dwisetiyadi/CodeIgniter-PHP-QR-Code). LGPL License.
+- Clippy (ernie fork) (https://github.com/ernie/clippy). MIT License.
+- ZeroClipboard (http://zeroclipboard.org/). MIT License.
+- Bootstrap Datepicker (eternicode fork) (https://github.com/eternicode/bootstrap-datepicker). Apache License V2.
+- Jstree (https://github.com/vakata/jstree). MIT License.
+
+The SOFTWARE PRODUCT is not a derivative work of any of these products.
+
+The SOFTWARE PRODUCT does not infringe any patent or copyright or violate any other proprietary rights of any third party.
+
+5. NO WARRANTIES
+
+THE LICENSER expressly disclaims any warranty for the SOFTWARE PRODUCT. The SOFTWARE PRODUCT 
+is provided 'As Is' without any express or implied warranty of any kind, including but 
+not limited to any warranties of merchantability, noninfringement, or fitness of a particular 
+purpose. THE LICENSER does not warrant or assume responsibility for the accuracy or 
+completeness of any information, text, graphics, links or other items contained within 
+the SOFTWARE PRODUCT. THE LICENSER makes no warranties respecting any harm that may be caused 
+by the transmission of a computer virus, worm, time bomb, logic bomb, or other such computer 
+program. THE LICENSER further expressly disclaims any warranty or representation to AUTHORIZED 
+USERS or to any third party.
+
+6. LIMITATION OF LIABILITY
+
+In no event shall THE LICENSER be liable for any damages (including, without limitation, lost 
+profits, business interruption, or lost information) rising out of 'Authorized Users' use of or 
+inability to use the SOFTWARE PRODUCT, even if THE LICENSER has been advised of the possibility 
+of such damages. In no event will THE LICENSER be liable for loss of data or for indirect, special, 
+incidental, consequential (including lost profit), or other damages based in contract, tort 
+or otherwise. THE LICENSER shall have no liability with respect to the content of the SOFTWARE 
+PRODUCT or any part thereof, including but not limited to errors or omissions contained therein, 
+libel, infringements of rights of publicity, privacy, trademark rights, business interruption, 
+personal injury, loss of privacy, moral rights or the disclosure of confidential information.
+
+7. JURISDICTION 
+
+This agreement will be governed by the laws of Spain, Competent Court of Terrassa (Barcelona), Spain.
+
+8. FURTHER INFORMATION
+
+For further information about this EULA, contact:
+
+Ferran Barba
+Nord, 115 2-1 08221 Terrassa (Barcelona) SPAIN
+info@teampasswordmanager.com
+http://teampasswordmanager.com
+
