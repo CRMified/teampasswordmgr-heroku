@@ -6,7 +6,7 @@
   "addons": ["cleardb:ignite"],
   "buildpacks": [
     {
-      "url": "https://github.com/CRMified/heroku-001composer"
+      "url": "https://github.com/CRMified/heroku-001"
     }
   ],  
 }
